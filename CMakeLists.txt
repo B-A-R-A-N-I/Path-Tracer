@@ -19,6 +19,7 @@ set ( SOURCE_ONE_WEEKEND
   src/inOneWeekend/main.cpp
   src/inOneWeekend/vec3.h
   src/inOneWeekend/color.h
+  src/inOneWeekend/ray.h
 )
 
 include_directories(src)
