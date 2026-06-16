@@ -20,6 +20,11 @@ set ( SOURCE_ONE_WEEKEND
   src/inOneWeekend/vec3.h
   src/inOneWeekend/color.h
   src/inOneWeekend/ray.h
+  src/inOneWeekend/hittable.h
+  src/inOneWeekend/sphere.h
+  src/inOneWeekend/hittable_list.h
+  src/inOneWeekend/rtweekend.h
+  src/inOneWeekend/interval.h
 )
 
 include_directories(src)
