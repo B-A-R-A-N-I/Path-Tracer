@@ -6,7 +6,7 @@
 
 cmake_minimum_required ( VERSION 3.1.0...4.0.0 )
 
-project ( RTWeekend LANGUAGES CXX )
+project ( RAYTRACER LANGUAGES CXX )
 
 # Set to C++11
 set ( CMAKE_CXX_STANDARD          11 )
@@ -15,18 +15,18 @@ set ( CMAKE_CXX_EXTENSIONS        OFF )
 
 # Source
 
-set ( SOURCE_ONE_WEEKEND
-  src/inOneWeekend/main.cpp
-  src/inOneWeekend/vec3.h
-  src/inOneWeekend/color.h
-  src/inOneWeekend/ray.h
-  src/inOneWeekend/hittable.h
-  src/inOneWeekend/sphere.h
-  src/inOneWeekend/hittable_list.h
-  src/inOneWeekend/rtweekend.h
-  src/inOneWeekend/interval.h
-  src/inOneWeekend/camera.h
-  src/inOneWeekend/material.h
+set ( SOURCE_RAY_TRACER
+  src/main.cpp
+  src/vec3.h
+  src/color.h
+  src/ray.h
+  src/hittable.h
+  src/sphere.h
+  src/hittable_list.h
+  src/rt.h
+  src/interval.h
+  src/camera.h
+  src/material.h
 )
 
 include_directories(src)
@@ -59,4 +59,4 @@ elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # Executables
-add_executable(inOneWeekend      ${EXTERNAL} ${SOURCE_ONE_WEEKEND})
+add_executable(rayTracer      ${EXTERNAL} ${SOURCE_RAY_TRACER})
